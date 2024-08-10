@@ -1,0 +1,51 @@
+body{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    font-family: "Gill Sans", sans-serif;
+    /* font-size: 5rem; */
+}
+span{
+    background:url("https://cdn4.iconfinder.com/data/icons/twitter-29/512/166_Heart_Love_Like_Twitter-512.png");
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    background-size:cover ;
+    left:50%;
+    top: 50%;
+    pointer-events: none;
+    transform: translate(-50%,-50%);
+    animation: animate 20s linear ;
+}
+@keyframes animate {
+    0%{
+        transform: translate(-50%,-50%);
+        opacity: 1;
+        filter: hue-rotate(0);
+    }
+    100%{
+        transform: translate(-50%,-10000%);
+        opacity: 0;
+        filter: hue-rotate(720deg);
+    }
+}
+.Main{
+    pointer-events: none;
+}
+#Output {
+    font-size: 5rem;
+    text-align: center;
+    pointer-events: none;
+    color: white;
+}
+.suggestion{
+    color: white;
+    text-align: center;
+    pointer-events: none;
+}
